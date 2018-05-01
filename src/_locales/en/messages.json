@@ -1,0 +1,82 @@
+{
+  "Clock": {
+    "message": "Clock",
+    "description": "title: Clock"
+  },
+  "Date": {
+    "message": "Date",
+    "description": "option title: Date"
+  },
+  "Hidden": {
+    "message": "Hidden",
+    "description": "option: Hidden"
+  },
+  "Position": {
+    "message": "Position",
+    "description": "option title: Position"
+  },
+  "Center": {
+    "message": "Center",
+    "description": "option: Center"
+  },
+  "LeftTop": {
+    "message": "Left-Top",
+    "description": "option: Left-Top"
+  },
+  "LeftBottom": {
+    "message": "Left-Bottom",
+    "description": "option: Left-Bottom"
+  },
+  "Size": {
+    "message": "Size",
+    "description": "option title: Size"
+  },
+  "Play": {
+    "message": "Play",
+    "description": "title: Play"
+  },
+  "BackgroundMusic": {
+    "message": "Background Music",
+    "description": "option title: BackgroundMusic"
+  },
+  "Muted": {
+    "message": "Muted",
+    "description": "options: Muted"
+  },
+  "Model": {
+    "message": "Model",
+    "description": "option title: Model"
+  },
+  "Random": {
+    "message": "Random",
+    "description": "option: Random"
+  },
+  "PlayList": {
+    "message": "Play List",
+    "description": "option title: PlayList"
+  },
+  "Default": {
+    "message": "Default",
+    "description": "table th title: Default"
+  },
+  "Path": {
+    "message": "Path",
+    "description": "table th title: Path"
+  },
+  "Nothing": {
+    "message": "Nothing",
+    "description": "table tip: Nothing"
+  },
+  "Add": {
+    "message": "Add",
+    "description": "operation | title : Add"
+  },
+  "InputTip": {
+    "message": "Please input absolute path",
+    "description": "add input-box tip"
+  },
+  "FormatError": {
+    "message": "Format error",
+    "description": "error message: Format error"
+  }
+}

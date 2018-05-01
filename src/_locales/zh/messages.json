@@ -1,0 +1,82 @@
+{
+  "Clock": {
+    "message": "时钟",
+    "description": "title: Clock"
+  },
+  "Date": {
+    "message": "日期",
+    "description": "option title: Date"
+  },
+  "Hidden": {
+    "message": "隐藏",
+    "description": "option: Hidden"
+  },
+  "Position": {
+    "message": "位置",
+    "description": "option title: Position"
+  },
+  "Center": {
+    "message": "居中",
+    "description": "option: Center"
+  },
+  "LeftTop": {
+    "message": "左上",
+    "description": "option: Left-Top"
+  },
+  "LeftBottom": {
+    "message": "左下",
+    "description": "option: Left-Bottom"
+  },
+  "Size": {
+    "message": "大小",
+    "description": "option title: Size"
+  },
+  "Play": {
+    "message": "播放",
+    "description": "title: Play"
+  },
+  "BackgroundMusic": {
+    "message": "背景音乐",
+    "description": "option title: BackgroundMusic"
+  },
+  "Muted": {
+    "message": "静音",
+    "description": "options: Muted"
+  },
+  "Model": {
+    "message": "播放模式",
+    "description": "option title: Model"
+  },
+  "Random": {
+    "message": "随机",
+    "description": "option title: PlayList"
+  },
+  "PlayList": {
+    "message": "播放列表",
+    "description": "option title: PlayList"
+  },
+  "Default": {
+    "message": "默认",
+    "description": "table th title: Default"
+  },
+  "Path": {
+    "message": "路径",
+    "description": "table th title: Path"
+  },
+  "Nothing": {
+    "message": "空",
+    "description": "table tip: Nothing"
+  },
+  "Add": {
+    "message": "增加",
+    "description": "operation | title : Add"
+  },
+  "InputTip": {
+    "message": "请输入绝对路径",
+    "description": "add input-box tip"
+  },
+  "FormatError": {
+    "message": "格式错误",
+    "description": "error message: Format error"
+  }
+}
