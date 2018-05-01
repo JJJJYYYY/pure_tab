@@ -44,7 +44,7 @@ function getPlaySrc (data) {
     ? ~~(Math.random() * data['playList'].length)
     : data['model']
 
-  return data['playList'][i]
+  return data['playList'][i] || 'https://raw.githubusercontent.com/JJJJYYYY/pure_tab/master/static/loli.mov'
 }
 
 export default {

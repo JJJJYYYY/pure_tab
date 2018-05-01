@@ -65,6 +65,11 @@ module.exports = {
         from: path.resolve(__dirname, 'src/_locales'),
         to: '_locales',
         ignore: ['.*']
+      },
+      {
+        from: path.resolve(__dirname, 'static/*.png'),
+        to: '',
+        ignore: ['.*']
       }
     ]),
   ],

@@ -12,6 +12,13 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "static/icon2x.png",
+      "32": "static/icon3x.png"
+    }
+  },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "default_locale": "en"
 }

@@ -63,6 +63,10 @@
     "message": "Path",
     "description": "table th title: Path"
   },
+  "Del": {
+    "message": "Del",
+    "description": "table th title: Del"
+  },
   "Nothing": {
     "message": "Nothing",
     "description": "table tip: Nothing"

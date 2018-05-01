@@ -63,6 +63,10 @@
     "message": "路径",
     "description": "table th title: Path"
   },
+  "Del": {
+    "message": "删除",
+    "description": "table th title: Del"
+  },
   "Nothing": {
     "message": "空",
     "description": "table tip: Nothing"

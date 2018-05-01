@@ -104,6 +104,7 @@
             <tr>
               <th class="table_item-default">{{ $root.i18n('Default') }}</th>
               <th class="table_item-path">{{ $root.i18n('Path') }}</th>
+              <th class="table_item-path">{{ $root.i18n('Del') }}</th>
             </tr>
             <tr
               v-for="(item, i) in playList"
@@ -118,6 +119,14 @@
                 >
               </td>
               <td class="table_item-path">{{ item }}</td>
+              <td>
+                <button
+                  class="btn btn-text"
+                  @click="delListItem(i)"
+                  >
+                  {{ $root.i18n('Del') }}
+                </button>
+              </td>
             </tr>
           </table>
           <p
@@ -160,6 +169,15 @@
 import event from '@/utils/event'
 
 const EncodeReg = /([^(\/|\\)]{1,}\.(mp4|mov|ogg))$/i
+const HttpReg = /http(s?):\/\//g
+
+function getProtocalPath (path) {
+  if (path.match(HttpReg)) {
+    return path
+  } else {
+    return `file://${path}`
+  }
+}
 
 export default {
   name: 'Setting',
@@ -204,15 +222,20 @@ export default {
       event.$emit('commit', 'size', +target.value)
     },
     addList () {
-      if (!this.path) return
-      let result = this.path.match(EncodeReg)
+      let path = this.path
+      if (!path) return
+      let result = path.match(EncodeReg)
 
+      path = getProtocalPath(path)
       if (Array.isArray(result) && result[1]) {
-        event.$emit('commit', 'playList', [].concat(this.playList, [this.path]))
-        this.path = ''
+        event.$emit('commit', 'playList', [].concat(this.playList, [path]))
+        path = ''
       } else {
         this.errMsg = this.$root.i18n('FormatError')
       }
+    },
+    delListItem (i) {
+      event.$emit('commit', 'playList', this.playList.filter((item, index) => index !== i))
     },
     changemuted ({ target }) {
       event.$emit('commit', 'muted', !!target.checked)
@@ -272,7 +295,11 @@ export default {
   width: 20%;
 }
 .table_item-path {
-  width: 80%;
+  width: 60%;
+}
+.btn-text {
+  padding: 0;
+  cursor: pointer;
 }
 .table-nodata {
   width: 100%;
